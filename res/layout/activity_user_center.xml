@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/default_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:background="@color/default_pink" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ImageView_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/demo_user" />
+
+            <Button
+                android:id="@+id/Button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:background="@null"
+                android:text="注销"
+                android:textColor="#096BB4"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="监控总览自动更新时间 :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <RelativeLayout
+                android:layout_width="120dip"
+                android:layout_height="36dip"
+                android:background="@drawable/ic_drop_bg" >
+
+                <Spinner
+                    android:id="@+id/Spinner_monitor_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:spinnerMode="dropdown"
+                    android:textSize="@dimen/text_13" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="监控时进入屏保:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_screen"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@drawable/checkbox"
+                android:button="@null"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="无操作时自动注销时间 :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <RelativeLayout
+                android:layout_width="120dip"
+                android:layout_height="36dip"
+                android:background="@drawable/ic_drop_bg" >
+
+                <Spinner
+                    android:id="@+id/Spinner_layout_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:spinnerMode="dropdown"
+                    android:textSize="@dimen/text_13" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="推送消息接受"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_push"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@drawable/checkbox"
+                android:button="@null"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="消息响铃"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_message_audio"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@drawable/checkbox"
+                android:button="@null"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

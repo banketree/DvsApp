@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智慧物联</string>
+    <string name="app_version">智慧物联系统</string>
+    <string name="information">信息\n总览</string>
+    <string name="realtimemonitor">实时\n监控</string>
+    <string name="maploc">地图\n定位</string>
+    <string name="usercenter">用户\n中心</string>
+    <string name="help">帮助\n支持</string>
+    <string name="header_refresh_normal">下拉刷新</string>
+    <string name="header_refresh_release">松开刷新</string>
+    <string name="header_refresh_loading">刷新中</string>
+    <string name="header_refresh_time_">刷新时间：</string>
+    <string name="footer_load_click">点击加载</string>
+    <string name="footer_loading">加载中</string>
+    <string name="footer_load_release">松开刷新</string>
+    <string name="company_info">\t\t\t\t苏州丹唯思智能科技有限公司致力于智慧物联系统的研发与建设，我们期望和各行业客户合作以共同推进该行业与互联网的深度融合，帮助创造新的发展生态。</string>
+    <string name="contact_method">联系方式 (单击可复制)</string>
+    <string name="copyright">版权所有©  苏州单唯思智能科技有限公司</string>
+
+</resources>

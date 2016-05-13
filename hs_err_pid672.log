@@ -1,0 +1,135 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=672, tid=7700
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_25-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.25-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0028cc00):  JavaThread "Unknown thread" [_thread_in_vm, id=7700, stack(0x00320000,0x00370000)]
+
+Stack: [0x00320000,0x00370000],  sp=0x0036f970,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x19796b]
+V  [jvm.dll+0x1908e6]
+V  [jvm.dll+0x3b4e9]
+V  [jvm.dll+0x3b69e]
+V  [jvm.dll+0x4a063]
+V  [jvm.dll+0x9dc8e]
+V  [jvm.dll+0x9df52]
+V  [jvm.dll+0x145a01]
+V  [jvm.dll+0x169ab8]
+V  [jvm.dll+0xdaea1]
+C  [javaw.exe+0x13e4]
+C  [javaw.exe+0x1eb7]
+C  [javaw.exe+0xaba1]
+C  [javaw.exe+0xac2b]
+C  [kernel32.dll+0x1337a]
+C  [ntdll.dll+0x39f72]
+C  [ntdll.dll+0x39f45]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0028cc00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7700, stack(0x00320000,0x00370000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.083 loading class java/lang/CharSequence done
+Event: 0.084 loading class java/lang/String done
+Event: 0.084 loading class java/lang/Class
+Event: 0.084 loading class java/lang/reflect/AnnotatedElement
+Event: 0.084 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.084 loading class java/lang/reflect/GenericDeclaration
+Event: 0.084 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.084 loading class java/lang/reflect/Type
+Event: 0.084 loading class java/lang/reflect/Type done
+Event: 0.084 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x00e80000 - 0x00eb0000 	F:\eclipse\jre\bin\javaw.exe
+0x777c0000 - 0x77940000 	C:\Windows\SysWOW64\ntdll.dll
+0x76490000 - 0x765a0000 	C:\Windows\syswow64\kernel32.dll
+0x755d0000 - 0x75617000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75790000 - 0x75830000 	C:\Windows\syswow64\ADVAPI32.dll
+0x756d0000 - 0x7577c000 	C:\Windows\syswow64\msvcrt.dll
+0x75ac0000 - 0x75ad9000 	C:\Windows\SysWOW64\sechost.dll
+0x754e0000 - 0x755d0000 	C:\Windows\syswow64\RPCRT4.dll
+0x75160000 - 0x751c0000 	C:\Windows\syswow64\SspiCli.dll
+0x75150000 - 0x7515c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x75f80000 - 0x76080000 	C:\Windows\syswow64\USER32.dll
+0x75830000 - 0x758c0000 	C:\Windows\syswow64\GDI32.dll
+0x75940000 - 0x7594a000 	C:\Windows\syswow64\LPK.dll
+0x75950000 - 0x759ed000 	C:\Windows\syswow64\USP10.dll
+0x73d60000 - 0x73efe000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x759f0000 - 0x75a47000 	C:\Windows\syswow64\SHLWAPI.dll
+0x75a50000 - 0x75ab0000 	C:\Windows\system32\IMM32.DLL
+0x75ae0000 - 0x75bac000 	C:\Windows\syswow64\MSCTF.dll
+0x5e420000 - 0x5e4df000 	F:\eclipse\jre\bin\msvcr100.dll
+0x6b1f0000 - 0x6b594000 	F:\eclipse\jre\bin\client\jvm.dll
+0x6df10000 - 0x6df17000 	C:\Windows\system32\WSOCK32.dll
+0x753e0000 - 0x75415000 	C:\Windows\syswow64\WS2_32.dll
+0x765c0000 - 0x765c6000 	C:\Windows\syswow64\NSI.dll
+0x722e0000 - 0x72312000 	C:\Windows\system32\WINMM.dll
+0x75780000 - 0x75785000 	C:\Windows\syswow64\PSAPI.DLL
+0x6f1d0000 - 0x6f1dc000 	F:\eclipse\jre\bin\verify.dll
+0x6ba40000 - 0x6ba61000 	F:\eclipse\jre\bin\java.dll
+0x60280000 - 0x602a9000 	F:\eclipse\jre\bin\jdwp.dll
+0x70f00000 - 0x70f07000 	F:\eclipse\jre\bin\npt.dll
+0x6ba20000 - 0x6ba33000 	F:\eclipse\jre\bin\zip.dll
+0x740e0000 - 0x741cb000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:2341 -Dfile.encoding=UTF-8 -Xbootclasspath:D:\Android_Sdk\adt-bundle-windows-x86-20140702\sdk\platforms\android-21\android.jar 
+java_command: com.dvsapp.TestData
+java_class_path (initial): E:\dvsapp\libs\smartappjson-32-1.0.jar;E:\dvsapp\libs\locSDK_3.1.jar;E:\android-lib\¿ò¼Ü\TreeCore\libs\android-support-v4.jar;E:\dvsapp\libs\baidumapapi_v3_1_1.jar;E:\android-lib\¿ò¼Ü\appcompat_v7\libs\android-support-v7-appcompat.jar;E:\android-lib\¿ò¼Ü\TreeCore\bin\treecore.jar;E:\dvsapp\other\MPAndroidChart\MPChartLib\bin\mpchartlib.jar;E:\android-lib\¿ò¼Ü\appcompat_v7\bin\android-support-v7-appcompat22.0.jar;E:\dvsapp\bin\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\jdk64
+PATH=F:\eclipse\jre\bin;F:/eclipse/jre/bin/client;F:/eclipse/jre/bin;F:/eclipse/jre/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk64\bin;D:\jdk64\jre\bin;D:\Android_Sdk\adt-bundle-windows-x86-20140702\sdk\platform-tools;D:\Android_Sdk\adt-bundle-windows-x86-20140702\sdk\tools;;F:\Svn\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;F:\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, tsc, tscinvbit
+
+Memory: 4k page, physical 4175064k(1734172k free), swap 8367504k(5359604k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.25-b02) for windows-x86 JRE (1.8.0_25-b18), built on Oct  7 2014 14:31:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Fri Sep 25 22:22:44 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

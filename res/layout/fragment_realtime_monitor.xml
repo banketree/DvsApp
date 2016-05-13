@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/default_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/frame_boder_gray_bg_white"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/EditText_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ImageView_search_icon"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/icon_search_37"
+                android:visibility="gone" >
+            </ImageView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/ic_main_refresh_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="数据时间"
+                android:textColor="#096BB4"
+                android:textSize="@dimen/text_13"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/TextText_refresh_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_13" />
+
+            <ImageView
+                android:id="@+id/ImageView_refresh"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/icon_search_refresh" >
+            </ImageView>
+        </RelativeLayout>
+
+        <com.dvsapp.view.PinnedHeaderExpandableListView
+            android:id="@+id/PinnedHeaderExpandableListView_host"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

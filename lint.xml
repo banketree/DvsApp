@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/dvs/appjson/DvsAPI2.java" />
+        <ignore path="src/com/dvsapp/MyApplication.java" />
+        <ignore path="src/com/dvsapp/view/NiceSpinner.java" />
+        <ignore path="src/com/dvsapp/view/NiceSpinnerBaseAdapter.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/dvsapp/ui/Information.java" />
+    </issue>
+</lint>

@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+    </TabHost>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ic_main_tool_bg"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_tool_mid" />
+
+        <Button
+            android:id="@+id/Button_information"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_tool"
+            android:text="@string/information"
+            android:textColor="@color/txt_white_black_color"
+            android:textSize="@dimen/text_13" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_tool_mid" />
+
+        <Button
+            android:id="@+id/Button_realtimemonitor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_tool"
+            android:text="@string/realtimemonitor"
+            android:textColor="@color/txt_white_black_color"
+            android:textSize="@dimen/text_13" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_tool_mid" />
+
+        <Button
+            android:id="@+id/Button_maploc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_tool"
+            android:text="@string/maploc"
+            android:textColor="@color/txt_white_black_color"
+            android:textSize="@dimen/text_13" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_tool_mid" />
+
+        <Button
+            android:id="@+id/Button_usercenter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_tool"
+            android:text="@string/usercenter"
+            android:textColor="@color/txt_white_black_color"
+            android:textSize="@dimen/text_13" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_tool_mid" />
+
+        <Button
+            android:id="@+id/Button_help"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_tool"
+            android:text="@string/help"
+            android:textColor="@color/txt_white_black_color"
+            android:textSize="@dimen/text_13" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_tool_mid" />
+    </LinearLayout>
+
+</LinearLayout>

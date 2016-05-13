@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/default_blue" >
+
+        <ImageView
+            android:id="@+id/ImageView_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_btn_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView_host_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所属主机名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/TextView_data_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据项名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ic_main_refresh_bg" >
+
+        <ImageView
+            android:id="@+id/ImageView_pre"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/button_pre" />
+
+        <TextView
+            android:id="@+id/TextView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_15" />
+
+        <ImageView
+            android:id="@+id/ImageView_next"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/button_next" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Button_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_chart_data"
+            android:text="图示"
+            android:textColor="@color/txt_blue_black_color"
+            android:textSize="@dimen/text_13" />
+
+        <Button
+            android:id="@+id/Button_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_chart_data"
+            android:text="数据"
+            android:textColor="@color/txt_blue_black_color"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip" />
+
+</LinearLayout>
